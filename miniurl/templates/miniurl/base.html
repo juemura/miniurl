@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+    <head>
+        <title>MiniURL</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div>
+            <a href="{% url 'generate_url' %}"></span></a>
+        </div>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

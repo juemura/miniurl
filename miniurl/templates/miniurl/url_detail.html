@@ -1,0 +1,11 @@
+{% extends 'miniurl/base.html' %}
+
+{% block content %}
+    <div>
+        <h2><span class="purple">Original URL: </span><a href={{ url.original_url }}>{{ url.original_url }}</a></h2>
+        <h2><span class="purple">New URL: </span><a href="https://fakeurl.com/{{ url.tiny_url }}">https://fakeurl.com/{{ url.tiny_url }}</a></h2>
+        <br>
+        <div class="cta"><a class="click" href="/">Generate new URL</a></div>
+        
+    </div>
+{% endblock %}

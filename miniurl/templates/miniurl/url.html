@@ -1,0 +1,21 @@
+
+{% extends 'miniurl/base.html' %}
+
+{% block content %}
+    <div class="box">
+        <h2>Generate new URL</h2>
+            
+        <form method="POST">{% csrf_token %}
+            {{ form.as_p }}
+            
+            <div class="cta">
+                <span class="span_cta">
+                    <span>
+                        <input name="go" type="Submit" value="Go">
+                    </span>
+                </span>
+            </div>
+        </form>        
+    </div>
+{% endblock %}
+
