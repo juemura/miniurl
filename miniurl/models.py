@@ -6,7 +6,7 @@ import random
 
 class URL(models.Model):
     original_url = models.URLField()
-    tiny_url = models.CharField(max_length=5)
+    tiny_url = models.CharField(primary_key=True, max_length=5)
 
     def generate_url(self):
         self.tiny_url = self.reduce_url()
